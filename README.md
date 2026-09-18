@@ -130,7 +130,7 @@ Boot Buildroot Linux
         ↓
 Load kernel modules
         ↓
-Enable sensor device nodes
+Enable sensor acquisition
         ↓
 Start /usr/bin/appsensor
         ↓
@@ -157,7 +157,7 @@ Embedded-Linux-Gas-Monitoring/
 
 ## Limitations
 
-- MQ-2 output is currently treated as a **raw ADC value**, not calibrated ppm.
+- Gas level is currently reported as raw ADS1115 ADC counts, not as a calibrated gas concentration in ppm.
 - The gas warning threshold is currently a fixed compile-time value.
 - Software I²C and direct GPIO register access are platform-specific to the BeagleBone Black implementation.
 - The prototype uses development wiring; a production design would require a dedicated PCB, enclosure, and more robust power/interface design.
